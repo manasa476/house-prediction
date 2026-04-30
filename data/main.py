@@ -39,24 +39,19 @@ y = data['price']
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
 
-# -----------------------------
-# 4. Train Models
-# -----------------------------
+# Train Models
+
 lr = LinearRegression()
 rf = RandomForestRegressor()
 
 lr.fit(X_train, y_train)
 rf.fit(X_train, y_train)
-
-# -----------------------------
-# 5. Predictions
-# -----------------------------
+#  Predictions
 lr_pred = lr.predict(X_test)
 rf_pred = rf.predict(X_test)
 
-# -----------------------------
-# 6. Evaluation
-# -----------------------------
+#  Evaluation
+
 def evaluate(y_test, pred, model_name):
     print(f"\n{model_name}")
     print("MAE:", mean_absolute_error(y_test, pred))
@@ -66,12 +61,9 @@ def evaluate(y_test, pred, model_name):
 evaluate(y_test, lr_pred, "Linear Regression")
 evaluate(y_test, rf_pred, "Random Forest")
 
-# -----------------------------
-# 7. Visualization
-# -----------------------------
-# -----------------------------
-# 7. Visualization
-# -----------------------------
+
+#  Visualization
+
 import os
 os.makedirs("outputs", exist_ok=True)   # ✅ ADD HERE
 
@@ -82,9 +74,7 @@ plt.title("Actual vs Predicted")
 plt.savefig("outputs/prediction_plot.png")
 plt.show()
 
-# -----------------------------
-# 8. Prediction
-# -----------------------------
+#  Prediction
 new_house = [[1200, 3, 2, 1, 5]]
 predicted_price = rf.predict(new_house)
 
