@@ -22,8 +22,17 @@ data = pd.DataFrame({
 
 print("\nDataset Preview:\n", data.head())
 
-le = LabelEncoder()
-data['location'] = le.fit_transform(data['location'])
+new_house = pd.DataFrame([{
+    'area': 1200,
+    'bedrooms': 3,
+    'bathrooms': 2,
+    'age': 5,
+    'location_A': 1,
+    'location_B': 0,
+    'location_C': 0
+}])
+
+predicted_price = rf.predict(new_house)
 
 X = data.drop('price', axis=1)
 y = data['price']
@@ -60,6 +69,12 @@ evaluate(y_test, rf_pred, "Random Forest")
 # -----------------------------
 # 7. Visualization
 # -----------------------------
+# -----------------------------
+# 7. Visualization
+# -----------------------------
+import os
+os.makedirs("outputs", exist_ok=True)   # ✅ ADD HERE
+
 plt.scatter(y_test, rf_pred)
 plt.xlabel("Actual Price")
 plt.ylabel("Predicted Price")
