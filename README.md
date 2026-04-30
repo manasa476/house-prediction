@@ -1,59 +1,43 @@
-# 🏠 House Price Prediction using Machine Learning
+# 🏠 House Price Prediction
 
-## 📌 Overview
-This project predicts house prices based on features like area, number of bedrooms, bathrooms, location, and age using Machine Learning models.
-
----
-
-## ⚙️ Tech Stack
-- Python
-- Pandas, NumPy
-- Scikit-learn
-- Matplotlib
+## 📌 Project Overview
+This project predicts house prices using Machine Learning models based on features such as area, number of bedrooms, bathrooms, location, and age of the property.
 
 ---
 
-## 📊 Dataset Features
-- Area
-- Bedrooms
-- Bathrooms
-- Location
-- Age
+## 🚀 Features
+- Data preprocessing and cleaning
+- Model training using multiple algorithms
+- Performance evaluation using MAE, RMSE, R²
+- Visualization of predictions
 
 ---
 
-## 🤖 Models Used
+## 🧠 Models Used
 - Linear Regression
 - Random Forest Regressor
 
 ---
 
-## 📈 Results
+## 📊 Results
+
 | Model              | MAE        | RMSE       | R² Score |
 |-------------------|-----------|------------|----------|
-| Linear Regression | 1420079   | 1670750    | 0.10     |
-| Random Forest     | 1555330   | 1880697    | -0.13    |
+| Linear Regression | 1,420,079 | 1,670,750  | 0.10     |
+| Random Forest     | 1,555,330 | 1,880,697  | -0.13    |
 
 ---
 
-## ⚠️ Observations
-- Model performance is low due to categorical data handling and dataset size.
-- Feature engineering is required for better accuracy.
+## ⚙️ Tech Stack
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- Matplotlib
 
 ---
 
-## 🚀 Future Improvements
-- Apply OneHotEncoding for location
-- Hyperparameter tuning
-- Deploy using FastAPI
-- Build frontend dashboard
+## 📦 Installation
 
----
-
-## 📸 Output
-(Add your prediction_plot.png here)
-
----
-
-## 🧑‍💻 Author
-Manasa Hiremath
+```bash
+pip install -r requirements.txt
