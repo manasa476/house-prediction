@@ -1,11 +1,11 @@
 # 🏠 House Price Prediction
 
-## 📌 Project Overview
+##  Project Overview
 This project predicts house prices using Machine Learning models based on features such as area, number of bedrooms, bathrooms, location, and age of the property.
 
 ---
 
-## 🚀 Features
+## Features
 - Data preprocessing and cleaning
 - Model training using multiple algorithms
 - Performance evaluation using MAE, RMSE, R²
@@ -13,7 +13,7 @@ This project predicts house prices using Machine Learning models based on featur
 
 ---
 
-## 🧠 Models Used
+##  Models Used
 - Linear Regression
 - Random Forest Regressor
 
